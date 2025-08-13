@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Safety Companion - Professional Weather App</title>
+    <meta name="description" content="Get real-time weather updates with safety precautions and beautiful visual effects">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="default-bg">
+    <!-- Particle canvas (background effects) -->
+    <canvas id="fxCanvas"></canvas>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <h1>🌦️ WEATHERLY</h1>
+                <p class="subtitle">Your trusted weather companion with safety insights</p>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+                    <button id="searchBtn">
+                        <span>🔍</span>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="current-weather">
+                <div class="weather-display">
+                    <div id="weatherIcon" class="weather-icon"></div>
+                    <div class="weather-details">
+                        <h2 id="cityName" class="city-name">Enter a city to get started</h2>
+                        <div class="weather-meta"><span id="weatherType" class="weather-type-badge">--</span></div>
+                        <p id="temperature" class="temperature">-- °C</p>
+                        <p id="condition" class="condition">--</p>
+                        <p id="humidity" class="humidity">Humidity: --%</p>
+                    </div>
+                </div>
+                <h3 class="section-title">⏳ Next 7 Hours Forecast</h3>
+                <div class="forecast-grid-wrapper">
+                    <div class="forecast-container" id="forecastContainer">
+                        <div class="forecast-placeholder">
+                            <p>Weather forecast will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="precautions-section">
+                <h3 class="section-title">⚠️ Safety Precautions</h3>
+                <div id="precautionCard" class="precaution-card">
+                    <p>Enter a city to see personalized safety recommendations</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>Powered by WeatherAPI.com | Built for your safety</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
