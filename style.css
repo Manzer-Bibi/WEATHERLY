@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -468,3 +468,4 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
